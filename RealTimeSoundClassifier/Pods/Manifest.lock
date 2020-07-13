@@ -1,0 +1,22 @@
+PODS:
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - SwiftyGif (5.2.0)
+
+DEPENDENCIES:
+  - Charts
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
+
+PODFILE CHECKSUM: 046a1c6113f5ee1cbc738cb51fdc542c3148b9a6
+
+COCOAPODS: 1.8.4

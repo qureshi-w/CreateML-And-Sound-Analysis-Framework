@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311FAD7A22B14C4A00265480 /* ResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FAD7922B14C4A00265480 /* ResultsObserver.swift */; };
+		319633D322B17ECC00DBACE0 /* libAudioPreprocessing.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AE3F7422A6BE5200C7151F /* libAudioPreprocessing.dylib */; };
+		319633D622B17EDA00DBACE0 /* libAudioPreprocessing.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 31AE3F7422A6BE5200C7151F /* libAudioPreprocessing.dylib */; };
+		319633D722B17EE100DBACE0 /* libAudioPreprocessing.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 31AE3F7422A6BE5200C7151F /* libAudioPreprocessing.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		31AE3F6322A6BE2100C7151F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE3F6222A6BE2100C7151F /* AppDelegate.swift */; };
+		31AE3F6522A6BE2100C7151F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE3F6422A6BE2100C7151F /* ViewController.swift */; };
+		31AE3F6822A6BE2100C7151F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AE3F6622A6BE2100C7151F /* Main.storyboard */; };
+		31AE3F6A22A6BE2100C7151F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AE3F6922A6BE2100C7151F /* Assets.xcassets */; };
+		31AE3F6D22A6BE2100C7151F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AE3F6B22A6BE2100C7151F /* LaunchScreen.storyboard */; };
+		47E8CE4623A487FC00FBB66F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8CE4523A487FC00FBB66F /* Constant.swift */; };
+		47E8CE4823A4A01E00FBB66F /* NSUIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8CE4723A4A01E00FBB66F /* NSUIColor+Hex.swift */; };
+		47E8CE4A23A4A87700FBB66F /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8CE4923A4A87700FBB66F /* PieChartViewController.swift */; };
+		47E8CE4F23A5114B00FBB66F /* mic1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE4E23A5114B00FBB66F /* mic1.gif */; };
+		47E8CE5123A54B0300FBB66F /* SoundRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8CE5023A54B0300FBB66F /* SoundRecognizerViewController.swift */; };
+		47E8CE5623A5514B00FBB66F /* Applause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE5523A5514B00FBB66F /* Applause.jpg */; };
+		47E8CE5823A5519E00FBB66F /* undecided.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE5723A5519E00FBB66F /* undecided.jpg */; };
+		47E8CE5E23A55B8100FBB66F /* Talking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE5B23A55B8100FBB66F /* Talking.jpg */; };
+		47E8CE5F23A55B8100FBB66F /* BabyCrying.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE5C23A55B8100FBB66F /* BabyCrying.jpg */; };
+		47E8CE6023A55B8100FBB66F /* Rooster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E8CE5D23A55B8100FBB66F /* Rooster.jpg */; };
+		47E8CE6223A55DF600FBB66F /* sound.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 47E8CE6123A55DF600FBB66F /* sound.mlmodel */; };
+		47FB070123A4732600EA62C4 /* SpeechRecognizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 47FB070023A4732600EA62C4 /* SpeechRecognizer.mlmodel */; };
+		47FB070723A4759C00EA62C4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB070623A4759C00EA62C4 /* Utility.swift */; };
+		71AF0D1B12D19112FD718A42 /* Pods_RealTimeSoundClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5103A1D40D50A5139CF0822C /* Pods_RealTimeSoundClassifier.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		319633D522B17ECC00DBACE0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				319633D722B17EE100DBACE0 /* libAudioPreprocessing.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		076F74B61EFD4A8F7C887E5F /* Pods-RealTimeSoundClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeSoundClassifier.debug.xcconfig"; path = "Target Support Files/Pods-RealTimeSoundClassifier/Pods-RealTimeSoundClassifier.debug.xcconfig"; sourceTree = "<group>"; };
+		311FAD7922B14C4A00265480 /* ResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsObserver.swift; sourceTree = "<group>"; };
+		31AE3F5F22A6BE2100C7151F /* Improve Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Improve Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AE3F6222A6BE2100C7151F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31AE3F6422A6BE2100C7151F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31AE3F6722A6BE2100C7151F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31AE3F6922A6BE2100C7151F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31AE3F6C22A6BE2100C7151F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31AE3F6E22A6BE2100C7151F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31AE3F7422A6BE5200C7151F /* libAudioPreprocessing.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libAudioPreprocessing.dylib; sourceTree = "<group>"; };
+		47E8CE4523A487FC00FBB66F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		47E8CE4723A4A01E00FBB66F /* NSUIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUIColor+Hex.swift"; sourceTree = "<group>"; };
+		47E8CE4923A4A87700FBB66F /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		47E8CE4E23A5114B00FBB66F /* mic1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mic1.gif; sourceTree = "<group>"; };
+		47E8CE5023A54B0300FBB66F /* SoundRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRecognizerViewController.swift; sourceTree = "<group>"; };
+		47E8CE5523A5514B00FBB66F /* Applause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Applause.jpg; sourceTree = "<group>"; };
+		47E8CE5723A5519E00FBB66F /* undecided.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = undecided.jpg; sourceTree = "<group>"; };
+		47E8CE5B23A55B8100FBB66F /* Talking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Talking.jpg; sourceTree = "<group>"; };
+		47E8CE5C23A55B8100FBB66F /* BabyCrying.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BabyCrying.jpg; sourceTree = "<group>"; };
+		47E8CE5D23A55B8100FBB66F /* Rooster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rooster.jpg; sourceTree = "<group>"; };
+		47E8CE6123A55DF600FBB66F /* sound.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sound.mlmodel; sourceTree = "<group>"; };
+		47FB070023A4732600EA62C4 /* SpeechRecognizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpeechRecognizer.mlmodel; sourceTree = "<group>"; };
+		47FB070623A4759C00EA62C4 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5103A1D40D50A5139CF0822C /* Pods_RealTimeSoundClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeSoundClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D425336D0C485C77262EF6 /* Pods-RealTimeSoundClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeSoundClassifier.release.xcconfig"; path = "Target Support Files/Pods-RealTimeSoundClassifier/Pods-RealTimeSoundClassifier.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31AE3F5C22A6BE2100C7151F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319633D322B17ECC00DBACE0 /* libAudioPreprocessing.dylib in Frameworks */,
+				71AF0D1B12D19112FD718A42 /* Pods_RealTimeSoundClassifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		319633D222B17ECC00DBACE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5103A1D40D50A5139CF0822C /* Pods_RealTimeSoundClassifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31AE3F5622A6BE2100C7151F = {
+			isa = PBXGroup;
+			children = (
+				31AE3F6122A6BE2100C7151F /* RealTimeSoundClassifier */,
+				31AE3F6022A6BE2100C7151F /* Products */,
+				319633D222B17ECC00DBACE0 /* Frameworks */,
+				4D7D8FF04A65B2C22AC6BBAF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		31AE3F6022A6BE2100C7151F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31AE3F5F22A6BE2100C7151F /* Improve Me.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31AE3F6122A6BE2100C7151F /* RealTimeSoundClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				47E8CE5223A54FEB00FBB66F /* ML */,
+				47E8CE4B23A5113B00FBB66F /* Images */,
+				47FB070523A4758400EA62C4 /* Utility */,
+				47FB070423A4754C00EA62C4 /* Controller */,
+				47FB070323A4754400EA62C4 /* View */,
+				47FB070223A4753700EA62C4 /* Observer */,
+				31AE3F6222A6BE2100C7151F /* AppDelegate.swift */,
+				31AE3F7422A6BE5200C7151F /* libAudioPreprocessing.dylib */,
+				31AE3F6622A6BE2100C7151F /* Main.storyboard */,
+				31AE3F6922A6BE2100C7151F /* Assets.xcassets */,
+				31AE3F6B22A6BE2100C7151F /* LaunchScreen.storyboard */,
+				31AE3F6E22A6BE2100C7151F /* Info.plist */,
+			);
+			path = RealTimeSoundClassifier;
+			sourceTree = "<group>";
+		};
+		47E8CE4B23A5113B00FBB66F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47E8CE5C23A55B8100FBB66F /* BabyCrying.jpg */,
+				47E8CE5D23A55B8100FBB66F /* Rooster.jpg */,
+				47E8CE5B23A55B8100FBB66F /* Talking.jpg */,
+				47E8CE5723A5519E00FBB66F /* undecided.jpg */,
+				47E8CE5523A5514B00FBB66F /* Applause.jpg */,
+				47E8CE4E23A5114B00FBB66F /* mic1.gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		47E8CE5223A54FEB00FBB66F /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				47E8CE6123A55DF600FBB66F /* sound.mlmodel */,
+				47FB070023A4732600EA62C4 /* SpeechRecognizer.mlmodel */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		47FB070223A4753700EA62C4 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				311FAD7922B14C4A00265480 /* ResultsObserver.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		47FB070323A4754400EA62C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47E8CE4923A4A87700FBB66F /* PieChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47FB070423A4754C00EA62C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31AE3F6422A6BE2100C7151F /* ViewController.swift */,
+				47E8CE5023A54B0300FBB66F /* SoundRecognizerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47FB070523A4758400EA62C4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				47FB070623A4759C00EA62C4 /* Utility.swift */,
+				47E8CE4523A487FC00FBB66F /* Constant.swift */,
+				47E8CE4723A4A01E00FBB66F /* NSUIColor+Hex.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4D7D8FF04A65B2C22AC6BBAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				076F74B61EFD4A8F7C887E5F /* Pods-RealTimeSoundClassifier.debug.xcconfig */,
+				61D425336D0C485C77262EF6 /* Pods-RealTimeSoundClassifier.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31AE3F5E22A6BE2100C7151F /* RealTimeSoundClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AE3F7122A6BE2100C7151F /* Build configuration list for PBXNativeTarget "RealTimeSoundClassifier" */;
+			buildPhases = (
+				74CBA58BE6814377F83EEFF1 /* [CP] Check Pods Manifest.lock */,
+				31AE3F5B22A6BE2100C7151F /* Sources */,
+				31AE3F5C22A6BE2100C7151F /* Frameworks */,
+				31AE3F5D22A6BE2100C7151F /* Resources */,
+				319633D522B17ECC00DBACE0 /* Embed Libraries */,
+				14E2006B90926A86F241D038 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeSoundClassifier;
+			productName = SoundClassifier;
+			productReference = 31AE3F5F22A6BE2100C7151F /* Improve Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31AE3F5722A6BE2100C7151F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Anuj Dutt";
+				TargetAttributes = {
+					31AE3F5E22A6BE2100C7151F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 31AE3F5A22A6BE2100C7151F /* Build configuration list for PBXProject "RealTimeSoundClassifier" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31AE3F5622A6BE2100C7151F;
+			productRefGroup = 31AE3F6022A6BE2100C7151F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31AE3F5E22A6BE2100C7151F /* RealTimeSoundClassifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31AE3F5D22A6BE2100C7151F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319633D622B17EDA00DBACE0 /* libAudioPreprocessing.dylib in Resources */,
+				31AE3F6D22A6BE2100C7151F /* LaunchScreen.storyboard in Resources */,
+				47E8CE5623A5514B00FBB66F /* Applause.jpg in Resources */,
+				31AE3F6A22A6BE2100C7151F /* Assets.xcassets in Resources */,
+				47E8CE5823A5519E00FBB66F /* undecided.jpg in Resources */,
+				47E8CE5E23A55B8100FBB66F /* Talking.jpg in Resources */,
+				47E8CE5F23A55B8100FBB66F /* BabyCrying.jpg in Resources */,
+				47E8CE4F23A5114B00FBB66F /* mic1.gif in Resources */,
+				47E8CE6023A55B8100FBB66F /* Rooster.jpg in Resources */,
+				31AE3F6822A6BE2100C7151F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E2006B90926A86F241D038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeSoundClassifier/Pods-RealTimeSoundClassifier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeSoundClassifier/Pods-RealTimeSoundClassifier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealTimeSoundClassifier/Pods-RealTimeSoundClassifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CBA58BE6814377F83EEFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealTimeSoundClassifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31AE3F5B22A6BE2100C7151F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E8CE6223A55DF600FBB66F /* sound.mlmodel in Sources */,
+				47E8CE5123A54B0300FBB66F /* SoundRecognizerViewController.swift in Sources */,
+				47FB070723A4759C00EA62C4 /* Utility.swift in Sources */,
+				47E8CE4823A4A01E00FBB66F /* NSUIColor+Hex.swift in Sources */,
+				47FB070123A4732600EA62C4 /* SpeechRecognizer.mlmodel in Sources */,
+				31AE3F6522A6BE2100C7151F /* ViewController.swift in Sources */,
+				311FAD7A22B14C4A00265480 /* ResultsObserver.swift in Sources */,
+				31AE3F6322A6BE2100C7151F /* AppDelegate.swift in Sources */,
+				47E8CE4A23A4A87700FBB66F /* PieChartViewController.swift in Sources */,
+				47E8CE4623A487FC00FBB66F /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31AE3F6622A6BE2100C7151F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AE3F6722A6BE2100C7151F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31AE3F6B22A6BE2100C7151F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AE3F6C22A6BE2100C7151F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31AE3F6F22A6BE2100C7151F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31AE3F7022A6BE2100C7151F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31AE3F7222A6BE2100C7151F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076F74B61EFD4A8F7C887E5F /* Pods-RealTimeSoundClassifier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7XMQGW2963;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RealTimeSoundClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundClassifier",
+					"$(PROJECT_DIR)/RealTimeSoundClassifier",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salivatool.hormonprobe;
+				PRODUCT_NAME = "Improve Me";
+				PROVISIONING_PROFILE_SPECIFIER = "Hormonprobe Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31AE3F7322A6BE2100C7151F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D425336D0C485C77262EF6 /* Pods-RealTimeSoundClassifier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RealTimeSoundClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundClassifier",
+					"$(PROJECT_DIR)/RealTimeSoundClassifier",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salivatool.hormonprobe;
+				PRODUCT_NAME = "Improve Me";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31AE3F5A22A6BE2100C7151F /* Build configuration list for PBXProject "RealTimeSoundClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AE3F6F22A6BE2100C7151F /* Debug */,
+				31AE3F7022A6BE2100C7151F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31AE3F7122A6BE2100C7151F /* Build configuration list for PBXNativeTarget "RealTimeSoundClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AE3F7222A6BE2100C7151F /* Debug */,
+				31AE3F7322A6BE2100C7151F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31AE3F5722A6BE2100C7151F /* Project object */;
+}
