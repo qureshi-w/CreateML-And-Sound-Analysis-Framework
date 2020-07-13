@@ -24,8 +24,6 @@
 
 # Screen Shots
 
-<img width="306" alt="Screenshot 2019-12-14 at 1 21 39 pm" src="https://user-images.githubusercontent.com/59496278/87364443-b517bf80-c541-11ea-8721-896f4448d8eb.png">
-
 <img width="306" alt="Screenshot 2019-12-14 at 1 21 39 pm" src="https://user-images.githubusercontent.com/59496278/87364571-0031d280-c542-11ea-8377-180d928f4e2a.png">
 
 <img width="308" alt="Screenshot 2020-07-13 at 7 46 29 pm" src="https://user-images.githubusercontent.com/59496278/87364574-03c55980-c542-11ea-8169-a3f663073f8c.png">
