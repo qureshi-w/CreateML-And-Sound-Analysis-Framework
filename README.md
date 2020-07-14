@@ -8,10 +8,10 @@
 # How It works
 > Create Model
 1. Train the model by providing the specific sound like Crying Baby sound
-2. More the sound files input more the mature model you will get
+2. More the spesific sound input more the mature model you will get
 > Use Model
 1. Integrate the model into the project 
-2. Use sound analysis to framework to recognize the voice
+2. Use sound analysis framework to recognize the voice
 
 
 # Things to Learn
